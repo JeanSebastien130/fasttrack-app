@@ -1,0 +1,55 @@
+---
+http_interactions:
+  - request:
+      method: get
+      uri: https://cloud.iexapis.com/v1/stock/MSFT/stats?token=test-iex-api-publishable-token
+      body:
+        encoding: US-ASCII
+        string: ""
+      headers:
+        Accept:
+          - application/json; charset=utf-8
+        User-Agent:
+          - IEX Ruby Client/1.0.1
+        Accept-Encoding:
+          - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+    response:
+      status:
+        code: 200
+        message: OK
+      headers:
+        Server:
+          - nginx
+        Date:
+          - Thu, 02 May 2019 12:12:04 GMT
+        Content-Type:
+          - application/json; charset=utf-8
+        Transfer-Encoding:
+          - chunked
+        Connection:
+          - keep-alive
+        Set-Cookie:
+          - ctoken=8df9fdfb440744638edd9bfdc8e0d27b; Max-Age=43200; Path=/; Expires=Fri,
+            03 May 2019 00:12:04 GMT
+        Iexcloud-Messages-Used:
+          - "5"
+        X-Content-Type-Options:
+          - nosniff
+        Strict-Transport-Security:
+          - max-age=15768000
+        Access-Control-Allow-Origin:
+          - "*"
+        Access-Control-Allow-Credentials:
+          - "true"
+        Access-Control-Allow-Methods:
+          - GET, OPTIONS
+        Access-Control-Allow-Headers:
+          - Origin, X-Requested-With, Content-Type, Accept
+      body:
+        encoding: ASCII-8BIT
+        string:
+          '{"week52change":0.371641,"week52high":136.04,"week52low":95.92,"marketcap":990869169557,"employees":133074,"day200MovingAvg":112.43,"day50MovingAvg":121,"float":7694414092,"avg10Volume":25160156.2,"avg30Volume":23123700.13,"ttmEPS":4.66,"ttmDividendRate":1.8,"companyName":"Microsoft
+          Corp.","sharesOutstanding":7849945172,"maxChangePercent":4.355607,"year5ChangePercent":2.32987,"year2ChangePercent":0.84983,"year1ChangePercent":0.383503,"ytdChangePercent":0.270151,"month6ChangePercent":0.208977,"month3ChangePercent":0.212188,"month1ChangePercent":0.076335,"day30ChangePercent":0.089589,"day5ChangePercent":-0.010013,"nextDividendDate":"2019-05-21","dividendYield":0.014087248841960684,"nextEarningsDate":"2019-07-29","exDividendDate":"2019-05-24","peRatio":29.47,"beta":1.4135449089973444}'
+      http_version:
+    recorded_at: Thu, 02 May 2019 12:12:04 GMT
+recorded_with: VCR 4.0.0

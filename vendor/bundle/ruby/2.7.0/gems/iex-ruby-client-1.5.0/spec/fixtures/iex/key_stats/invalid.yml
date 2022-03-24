@@ -1,0 +1,49 @@
+---
+http_interactions:
+  - request:
+      method: get
+      uri: https://cloud.iexapis.com/v1/stock/INVALID/stats?token=test-iex-api-publishable-token
+      body:
+        encoding: US-ASCII
+        string: ""
+      headers:
+        Accept:
+          - application/json; charset=utf-8
+        User-Agent:
+          - IEX Ruby Client/1.0.1
+        Accept-Encoding:
+          - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+    response:
+      status:
+        code: 404
+        message: Not Found
+      headers:
+        Server:
+          - nginx
+        Date:
+          - Thu, 02 May 2019 12:12:52 GMT
+        Content-Type:
+          - text/html; charset=utf-8
+        Transfer-Encoding:
+          - chunked
+        Connection:
+          - keep-alive
+        Set-Cookie:
+          - ctoken=ef64ea7432894da3a5df0d13ec3a1d5a; Max-Age=43200; Path=/; Expires=Fri,
+            03 May 2019 00:12:52 GMT
+        Strict-Transport-Security:
+          - max-age=15768000
+        Access-Control-Allow-Origin:
+          - "*"
+        Access-Control-Allow-Credentials:
+          - "true"
+        Access-Control-Allow-Methods:
+          - GET, OPTIONS
+        Access-Control-Allow-Headers:
+          - Origin, X-Requested-With, Content-Type, Accept
+      body:
+        encoding: ASCII-8BIT
+        string: Unknown symbol
+      http_version:
+    recorded_at: Thu, 02 May 2019 12:12:52 GMT
+recorded_with: VCR 4.0.0
